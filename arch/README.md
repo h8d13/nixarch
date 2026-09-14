@@ -11,7 +11,7 @@ builds the *next* generation offline; the running root is never touched.
 It also aims to solve partial updates in a way, since the current gen;
 only lives in RAM and `checkupdates` equivalent is ran before `nixgen-update`.
 
-![SchemaArchinix](./schema.svg)
+![SchemaArchinix](./docs/schema.svg)
 
 This was generally the idea (like having `git` through changes you make on system).
 
@@ -66,9 +66,9 @@ from `nixstore.squashfs` on the ISO, and stages the tmpfs upper; a
 generator writes the `sysroot.mount` that overlays them, so the root
 filesystem is a unit like any other; `nixgen-bind.service` exposes the
 store at `/nixstore` and the store-disk root at `/nixstoredev` before
-switch-root. See [NOTES](./NOTES.md) for more details.
+switch-root. See [NOTES](./docs/NOTES.md) for more details.
 
-![BootFlow](./boot.svg)
+![BootFlow](./docs/boot.svg)
 
 Networking is baked in (networkd DHCP on `en*`, resolved DNS).
 
@@ -153,4 +153,4 @@ arch/uefi-vm.sh                                  # QEMU (UEFI): ISO + one blank 
 arch/uefi-vm.sh boot                             # boot what you installed
 ```
 
-![StatesArchinix](./states.svg)
+![StatesArchinix](./docs/states.svg)

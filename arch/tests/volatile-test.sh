@@ -1,5 +1,5 @@
 #!/bin/sh -e
-# Volatile state rows: the fourth category (see NOTES.md). Two halves,
+# Volatile state rows: the fourth category (see docs/NOTES.md). Two halves,
 # because the risk is in two places.
 #
 # Host: nixgen-statepaths, the one parser four call sites read rows
