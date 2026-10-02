@@ -7,7 +7,7 @@ libnixstore) from [NixOS/nix](https://github.com/NixOS/nix)
 2.36.0 (`40f375fa`), buildable on any Linux without Nix: `./build.sh`.
 
 > [!NOTE]
-> Remote stores (s3/http/ssh/daemon), the `.drv` realisation machinery (arguably, what an overlay already is; in kernel)
+> Remote stores (s3/http/ssh/daemon), the `.drv` realisation machinery (arguably, what an overlay already is)
 > are cut: stores hold imported trees only. [`arch/`](arch/) is the shell/C++ glue that retrieves and integrates them
 > with userland.
 
